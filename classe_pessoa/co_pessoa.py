@@ -7,7 +7,7 @@ class Pessoinha():
         self.etnia = etnia
         self.come = False
         self.bebe = False
-        self.dormi = False
+        self.dorme = False
         self.trabalha = False
     def comer(self):
         if self.come:
@@ -38,15 +38,15 @@ class Pessoinha():
             return str(self.nome.title())+ ' não está bebendo'
 
     def dormir(self):
-        if self.dormi:
+        if self.dorme:
             return str(self.nome.title())+ ' já está dormindo'
         else:
-            self.dormi = True
+            self.dorme = True
             return str(self.nome.title())+ ' foi dormir'
             
     def parar_dormir(self):
-        if self.dormi:
-            self.dormi = False
+        if self.dorme:
+            self.dorme = False
             return str(self.nome.title())+ ' acordou'
         else:
             return str(self.nome.title())+ ' não está dormindo'
