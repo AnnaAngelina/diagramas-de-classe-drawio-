@@ -1,59 +1,66 @@
 class Pessoinha():
     def __init__(self, nome, sobrenome, nascimento, sexo, nacionalidade, etnia):
-        self.nomeesobrenoome = nome + sobrenome
+        self.nome = nome + ' '+ sobrenome
         self.idade = 2024-int(nascimento)
         self.sexo = sexo
         self.nacionalidade = nacionalidade
         self.etnia = etnia
-        self.comer = False
-        self.beber = False
-        self.dormir = False
-        self.trabalhar = False
+        self.come = False
+        self.bebe = False
+        self.dormi = False
+        self.trabalha = False
     def comer(self):
-        if self.comer:
-            print(self.nomeesobrenoome.title(), 'já está comendo')
+        if self.come:
+            return str(self.nome.title()) + ' já está comendo'
         else:
-            print(self.nomeesobrenoome.title(), 'começou a comer')
-            self.comer = True
+            self.come = True
+            return str(self.nome.title()) + ' começou a comer'
+                   
     def parar_comer(self):
-        if self.comer:
-            print(self.nomeesobrenoome.title(), 'parou de comer')
+        if self.come:
+            self.come = False
+            return str(self.nome.title())+ ' parou de comer'
         else:
-            print(self.nomeesobrenoome.title(), 'não está comendo')
+            return str(self.nome.title())+ ' não está comendo'
 
     def beber(self):
-        if self.beber:
-            print(self.nomeesobrenoome.title(), 'já está bebendo')
+        if self.bebe:
+            return str(self.nome.title())+ ' já está bebendo'
         else:
-            print(self.nomeesobrenoome.title(), 'começou a beber')
-            self.beber = True
+            self.bebe = True
+            return str(self.nome.title())+ ' começou a beber'
+            
     def parar_beber(self):
-        if self.beber:
-            print(self.nomeesobrenoome.title(), 'parou de beber')
+        if self.bebe:
+            self.bebe = False
+            return str(self.nome.title())+ ' parou de beber'
         else:
-            print(self.nomeesobrenoome.title(), 'não está bebendo')
+            return str(self.nome.title())+ ' não está bebendo'
 
     def dormir(self):
-        if self.dormir:
-            print(self.nomeesobrenoome.title(), 'já está dormindo')
+        if self.dormi:
+            return str(self.nome.title())+ ' já está dormindo'
         else:
-            print(self.nomeesobrenoome.title(), 'foi dormir')
-            self.dormir = True
+            self.dormi = True
+            return str(self.nome.title())+ ' foi dormir'
+            
     def parar_dormir(self):
-        if self.dormir:
-            print(self.nomeesobrenoome.title(), 'acordou')
+        if self.dormi:
+            self.dormi = False
+            return str(self.nome.title())+ ' acordou'
         else:
-            print(self.nomeesobrenoome.title(), 'não está dormindo')
+            return str(self.nome.title())+ ' não está dormindo'
 
     def trabalhar(self):
-        if self.trabalhar:
-            print(self.nomeesobrenoome.title(), 'já está trabalhando')
+        if self.trabalha:
+            return str(self.nome.title())+ ' já está trabalhando'
         else:
-            print(self.nomeesobrenoome.title(), 'foi trabalhar')
-            self.trabalhar = True
+            self.trabalha = True
+            return str(self.nome.title())+ ' foi trabalhar'
+            
     def parar_trabalhar(self):
-        if self.trabalhar:
-            print(self.nomeesobrenoome.title(), 'parou de trabalhar')
+        if self.trabalha:
+            self.trabalha = False
+            return str(self.nome.title())+ ' parou de trabalhar'
         else:
-            print(self.nomeesobrenoome.title(), 'não está trabalhando')
-    
+            return str(self.nome.title())+ ' não está trabalhando'
