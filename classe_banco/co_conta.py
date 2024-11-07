@@ -1,6 +1,6 @@
 class Conta():
     def __init__(self, numero, agencia, dono):
-        self.numero = numero
+        self.__numero = numero
         self.agencia = agencia
         self.dono = dono
         self.saldo = 0
