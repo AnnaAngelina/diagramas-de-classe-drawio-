@@ -1,0 +1,11 @@
+#herança:
+#elimina a necessidade de duplicação de código
+#compartilha atributose comportamentos entre as classes de uma hierarquia (uma subclasse estende outra superclasse)
+#simples: quando herda só de uma classe; múltipla: uma classe herda de classes diferentes;
+#a exemplo temos uma superclasse pessoa e subclasses funcionario e cliente que herdam os atributos de pessoa
+from pessoa import Pessoa:
+  class Funcionario(Pessoa):
+    def __init__(self, nomep, cpfp, limitecompra)
+        pessoa.__init__(nomep, cpfp)
+        self.limitecompra = limitecompra
+#polimorfismo:um objeto pode se comportar de maneiras diferentes de acordo com os métodos da classe (obs: tem que ter o mesmo nome do metodoo da super classe pois vai sobre escrever). ex: podem falar coisas diferentes
