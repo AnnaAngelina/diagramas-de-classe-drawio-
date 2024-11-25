@@ -3,3 +3,4 @@
 ;; importam outras classes por isso não são herdadas (na interfaçe só vamos ter métodos abstratos que srão importados nas classes concretas, assim como nas classes abtratas)
 ;; -pacote de classe abstrata para ter base e trabalhar com elas, abstractmethod (from abc import ABC, abstractmethod)
 ;; -as classes concretas que herdam de abstratas, logo, precisam ter seus métodos abstratos, sendo que esses métodos só poderão ser usados na classe que herdou e teremos que dizer como ele vai funcionar
+se não quisermos usar os métodos de uma classe abstrata, que é obrigatório, podemos transformar a classe abstrata em concreta
